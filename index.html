@@ -172,7 +172,6 @@
       .hero-badge {
         display: flex;
         align-items: center;
-        flex-direction: column-reverse;
         gap: 8px;
         background: rgba(91, 184, 245, 0.12);
         border: 1px solid rgba(91, 184, 245, 0.25);
@@ -374,7 +373,9 @@
       }
       @media (max-width: 900px) {
         .hero-content {
-          grid-template-columns: 1fr;
+          /* grid-template-columns: 1fr; */
+          display: flex;
+          flex-direction: column-reverse;
           gap: 40px;
           padding: 60px 24px 40px;
         }
